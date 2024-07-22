@@ -3,6 +3,19 @@ from typing import List
 
 class Solution:
     def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
+
+        # Alternate Solution Start
+        height_to_name = {}
+        for h, n in zip(heights, names):
+            height_to_name[h] = n
+        res = []
+        rev_heights = list(reversed(sorted(heights)))
+
+        for height in rev_heights:
+            res.append(height_to_name[height])
+        print('res', res)
+        # Alternate Solution End
+
         height_dict = {}        
         for index, value in enumerate(heights):
             height_dict[value] = index
