@@ -10,4 +10,4 @@ class Solution:
 ss = Solution()
 ransomNote = 'aa'
 magazine = 'ab'
-ss.canConstruct(ransomNote, magazine)
+print(ss.canConstruct(ransomNote, magazine))

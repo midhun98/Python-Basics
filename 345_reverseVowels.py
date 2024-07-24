@@ -20,4 +20,4 @@ class Solution:
 
 ss = Solution()
 s = 'leetcode'
-ss.reverseVowels(s)
+print(ss.reverseVowels(s))
