@@ -12,8 +12,7 @@ class Solution:
 
         k = k - 1
         try:
-            if out[k]:
-                return out[k]
+            return out[k]
         except:
             return ""
 
