@@ -11,9 +11,11 @@ class Solution:
                 out.append(key)
 
         k = k - 1
-        if out[k]:
-            return out[k]
-        return ""
+        try:
+            if out[k]:
+                return out[k]
+        except:
+            return ""
 
 ss = Solution()
 arr = ["aaa","aa","a"]
