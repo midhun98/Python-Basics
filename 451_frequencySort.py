@@ -11,6 +11,14 @@ class Solution:
                     out += key*num
         return out
 
+class Solution(object):
+    def frequencySort(self, s):
+        out = ''
+        data = Counter(s).most_common()
+        for key, value in data:
+            out += key*value
+        return ''.join(out)
+
 ss = Solution()
 s = "tree"
 print(ss.frequencySort(s))
