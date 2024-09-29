@@ -12,6 +12,8 @@ class Solution:
                 right = mid
         return nums[left]
 
+
 ss = Solution()
-nums = [4, 5, 6, 7, 0, 1, 2]
+# nums = [4, 5, 6, 7, 1, 2, 3]
+nums = [11, 12, 13, 4, 5, 6, 7]
 print(ss.findMin(nums))
