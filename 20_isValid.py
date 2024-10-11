@@ -1,35 +1,26 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
-        if len(s) % 2:
-            return False
         data = {"}": "{", "]": "[", ")": "("}
+
         for char in s:
-            if char in data:
-                if stack and stack[-1] == data[char]:
+            stack.append(char)
+            if char == "]":
+                if len(stack) > 1 and stack[-2] == data[char]:
                     stack.pop()
-                else:
-                    return False
-            else:
-                stack.append(char)
-        return True if not stack else False
+                    stack.pop()
+            elif char == ")":
+                if len(stack) > 1 and stack[-2] == data[char]:
+                    stack.pop()
+                    stack.pop()
+            elif char == "}":
+                if len(stack) > 1 and stack[-2] == data[char]:
+                    stack.pop()
+                    stack.pop()
+
+        return len(stack) == 0
 
 
-class Solution2:
-    def isValid(self, s: str) -> bool:
-        stack = []
-        for char in s:
-            if char == "(":
-                stack.append(")")
-            elif char == "[":
-                stack.append("]")
-            elif char == "{":
-                stack.append("}")
-            elif not stack or stack.pop() != char:
-                return False
-        return not stack
-
-
-ss = Solution2()
+ss = Solution()
 s = "()[]{}}"
 print(ss.isValid(s))
