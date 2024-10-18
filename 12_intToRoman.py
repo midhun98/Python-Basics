@@ -1,22 +1,22 @@
 class Solution:
     def intToRoman(self, num: int) -> str:
         data = {
-            "I": 1,
-            "IV": 4,
-            "V": 5,
+            "M": 1000,
+            "CM": 900,
+            "D": 500,
+            "CD": 400,
+            "C": 100,
+            "XC": 90,
+            "L": 50,
+            "XL": 40,
             "IX": 9,
             "X": 10,
-            "XL": 40,
-            "L": 50,
-            "XC": 90,
-            "C": 100,
-            "CD": 400,
-            "D": 500,
-            "CM": 900,
-            "M": 1000,
+            "V": 5,
+            "IV": 4,
+            "I": 1,
         }
         out = []
-        for index, value in reversed(data.items()):
+        for index, value in data.items():
             while num > 0:
                 if num >= value:
                     out.append(index)
@@ -27,5 +27,5 @@ class Solution:
 
 
 ss = Solution()
-num = 1994
+num = 59
 print(ss.intToRoman(num))
