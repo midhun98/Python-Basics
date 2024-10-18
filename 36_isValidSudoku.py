@@ -7,21 +7,21 @@ class Solution:
         for r in range(9):
             s = set()
             for c in range(9):
-                item = board[r][c]
-                if item in s:
+                num = board[r][c]
+                if num in s:
                     return False
-                if item != ".":
-                    s.add(item)
+                if num != ".":
+                    s.add(num)
 
         # col level validation
         for r in range(9):
             s = set()
             for c in range(9):
-                item = board[c][r]
-                if item in s:
+                num = board[c][r]
+                if num in s:
                     return False
-                if item != ".":
-                    s.add(item)
+                if num != ".":
+                    s.add(num)
 
         # box level validation
         starts = [
@@ -39,11 +39,11 @@ class Solution:
             s = set()
             for row in range(r, r + 3):
                 for col in range(c, c + 3):
-                    item = board[row][col]
-                    if item in s:
+                    num = board[row][col]
+                    if num in s:
                         return False
-                    if item != ".":
-                        s.add(item)
+                    if num != ".":
+                        s.add(num)
 
         return True
 
