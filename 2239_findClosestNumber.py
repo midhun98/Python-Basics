@@ -1,11 +1,6 @@
 from typing import List
 
-
-
-ss = Solution()
-nums = [2,-1,1]
-
-print(ss.findClosestNumber(nums))class Solution:
+class Solution:
     def findClosestNumber(self, nums: List[int]) -> int:
         out = nums[0]
         for num in nums:
@@ -16,3 +11,8 @@ print(ss.findClosestNumber(nums))class Solution:
             return abs(out)
         else:
             return out
+
+ss = Solution()
+nums = [2,-1,1]
+
+print(ss.findClosestNumber(nums))
