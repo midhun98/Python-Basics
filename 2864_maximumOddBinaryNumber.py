@@ -4,7 +4,7 @@ class Solution:
         zero_count = 0
 
         for num in s:
-            if int(num) == 0:
+            if num == "0":
                 zero_count += 1
             else:
                 one_count += 1
