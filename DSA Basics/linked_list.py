@@ -35,7 +35,6 @@ class SLinkedList:
         temp = self.head
         for i in range(pos-1):
             temp = temp.next
-        np.data = data
         np.next = temp.next
         temp.next = np
 
@@ -44,7 +43,6 @@ class SLinkedList:
             return "Linked list is empty"
         else:
             temp = self.head
-            print(type(temp))  # Type of Node class
             while temp:
                 print(temp.data, "-->", end=" ")
                 temp = temp.next
