@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def lemonadeChange(self, bills: List[int]) -> bool:
         count_5 = 0
@@ -25,5 +26,5 @@ class Solution:
 
 
 ss = Solution()
-bills = [5,5,10,10,20]
+bills = [5, 5, 10, 10, 20]
 print(ss.lemonadeChange(bills))

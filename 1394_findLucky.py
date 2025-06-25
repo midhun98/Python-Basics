@@ -13,7 +13,9 @@ class Solution:
             return max(out)
         except:
             return -1
-arr = [2,2,2,3,3]
+
+
+arr = [2, 2, 2, 3, 3]
 
 ss = Solution()
 print(ss.findLucky(arr))

@@ -1,6 +1,3 @@
-from collections import Counter
-
-
 class Solution:
     def minAddToMakeValid(self, s: str) -> int:
         open_count = 0
@@ -14,6 +11,7 @@ class Solution:
                     open_count = 0
                     close_count += 1
         return open_count + close_count
+
 
 ss = Solution()
 s = ")))"

@@ -8,6 +8,7 @@ class Solution:
             highest.append(sum(li))
         return [highest.index(max(highest)), max(highest)]
 
+
 ss = Solution()
-mat = [[0,1],[1,0]]
+mat = [[0, 1], [1, 0]]
 print(ss.rowAndMaximumOnes(mat))

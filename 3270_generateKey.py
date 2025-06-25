@@ -7,10 +7,11 @@ class Solution:
             num2 = (4 - len(num2)) * "0" + num2
         if len(num3) < 4:
             num3 = (4 - len(num3)) * "0" + num3
-        out = ''
+        out = ""
         for i in range(len(num1)):
             out += str(min(int(num1[i]), int(num2[i]), int(num3[i])))
         return int(out)
+
 
 ss = Solution()
 num1 = 987

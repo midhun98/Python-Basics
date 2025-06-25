@@ -9,7 +9,7 @@ class Solution:
 
         for num in nums:
             if num > pivot:
-                great.append(num)   
+                great.append(num)
             elif num < pivot:
                 less.append(num)
             elif num == pivot:

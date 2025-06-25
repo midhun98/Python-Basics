@@ -5,6 +5,7 @@ class A:
     def feature2(self):
         print("Feature 2 working")
 
+
 class B:
     def feature3(self):
         print("Feature 3 working")
@@ -12,7 +13,8 @@ class B:
     def feature4(self):
         print("Feature 4 working")
 
-class C(A,B):
+
+class C(A, B):
     def feature5(self):
         print("Feature 5 working")
 

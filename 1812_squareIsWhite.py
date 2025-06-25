@@ -12,7 +12,7 @@ class Solution:
             out += "even"
         else:
             out += "odd"
-        return (data[out])
+        return data[out]
 
 
 ss = Solution()

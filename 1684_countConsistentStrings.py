@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def countConsistentStrings(self, allowed: str, words: List[str]) -> int:
         allowed = set(allowed)
@@ -24,7 +25,6 @@ class Solution2:
                     break
             count += flag
         return count
-
 
 
 ss = Solution()

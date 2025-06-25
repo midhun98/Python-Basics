@@ -1,7 +1,7 @@
 """
 Given a String str, reverse the string without reversing its individual words. Words are separated by dots.
 
-Note: The last character has not been '.'. 
+Note: The last character has not been '.'.
 
 Examples :
 
@@ -11,11 +11,12 @@ Explanation: After reversing the whole string(not individual words), the input s
 
 """
 
+
 class Solution:
-    def reverseWords(self,str):
-        str = str.split('.')
+    def reverseWords(self, str):
+        str = str.split(".")
         out = str[::-1]
-        return '.'.join(out)
+        return ".".join(out)
 
 
 ss = Solution()

@@ -3,17 +3,18 @@ class Solution:
         stack_s = []
         stack_t = []
         for letter in s:
-            if letter != '#':
+            if letter != "#":
                 stack_s.append(letter)
-            if '#' in letter and len(stack_s)!=0:
+            if "#" in letter and len(stack_s) != 0:
                 stack_s.pop()
         for letter in t:
-            if letter != '#':
+            if letter != "#":
                 stack_t.append(letter)
-            if '#' in letter and len(stack_t)!=0:
+            if "#" in letter and len(stack_t) != 0:
                 stack_t.pop()
 
         return stack_s == stack_t
+
 
 ss = Solution()
 s = "a##c"

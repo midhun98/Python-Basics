@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def mostWordsFound(self, sentences: List[str]) -> int:
         out = 0
@@ -11,5 +12,9 @@ class Solution:
 
 
 ss = Solution()
-sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+sentences = [
+    "alice and bob love leetcode",
+    "i think so too",
+    "this is great thanks very much",
+]
 print(ss.mostWordsFound(sentences))

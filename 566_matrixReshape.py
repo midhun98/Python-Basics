@@ -1,12 +1,13 @@
 from typing import List
 
+
 class Solution:
     def matrixReshape(self, mat: List[List[int]], r: int, c: int) -> List[List[int]]:
         numbers = []
         for li in mat:
             for num in li:
                 numbers.append(num)
-                
+
         if len(numbers) != r * c:
             return mat
 
@@ -20,8 +21,9 @@ class Solution:
             matrix.append(row)
         return matrix
 
+
 ss = Solution()
-mat = [[1,2],[3,4]]
+mat = [[1, 2], [3, 4]]
 r = 4
 c = 1
 print(ss.matrixReshape(mat, r, c))

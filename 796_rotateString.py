@@ -7,7 +7,8 @@ class Solution:
             return True
         return False
 
+
 ss = Solution()
-s = "abcde" 
+s = "abcde"
 goal = "abced"
 print(ss.rotateString(s, goal))

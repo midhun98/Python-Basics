@@ -8,16 +8,18 @@ Explanation: As 7 is the first element, it can see the sunrise. 4 can't see the 
 the sunrise.
 """
 
+
 class Solution:
     def countBuildings(self, height):
         highest = height[0]
         out = 1
-        for i in range(1,len(height)):
+        for i in range(1, len(height)):
             if height[i] > highest:
-                    out += 1
-                    highest = height[i]
+                out += 1
+                highest = height[i]
         return out
 
+
 ss = Solution()
-height = [7, 7, 8 ,3, 2, 8, 9, 7]
+height = [7, 7, 8, 3, 2, 8, 9, 7]
 print(ss.countBuildings(height))

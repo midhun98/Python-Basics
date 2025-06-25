@@ -18,6 +18,6 @@ class Solution:
 
 
 ss = Solution()
-nums = [-1,0,3,5,9,12]
+nums = [-1, 0, 3, 5, 9, 12]
 target = 3
 print(ss.search(nums, target))

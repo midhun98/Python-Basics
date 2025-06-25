@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def check(self, nums: List[int]) -> bool:
         count = 0
@@ -11,7 +12,8 @@ class Solution:
             return False
         return True
 
+
 ss = Solution()
 # nums = [3,4,5,1,2]
-nums = [2,1,3,4]
+nums = [2, 1, 3, 4]
 print(ss.check(nums))

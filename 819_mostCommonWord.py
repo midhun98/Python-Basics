@@ -1,14 +1,18 @@
 from collections import Counter
 from typing import List
 import re
-r'[a-zA-Z]+'
+
+r"[a-zA-Z]+"
+
 
 class Solution:
     def mostCommonWord(self, paragraph: str, banned: List[str]) -> str:
         if paragraph == "a, a, a, a, b,b,b,c, c":
             return "b"
         paragraph = paragraph.split()
-        para_list = [''.join(re.findall(r'[a-zA-Z]+', word)).lower() for word in paragraph]
+        para_list = [
+            "".join(re.findall(r"[a-zA-Z]+", word)).lower() for word in paragraph
+        ]
         print(para_list)
         out = []
         for word in para_list:
@@ -17,6 +21,7 @@ class Solution:
         out = Counter(out)
         out = list(out.most_common(1)[0])
         return out[0]
+
 
 paragraph = "a, a, a, a, b,b,b,c, c"
 banned = ["a"]

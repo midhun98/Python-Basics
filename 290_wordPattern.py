@@ -12,7 +12,7 @@ class Solution:
                     word_dict[word] = pattern[counter]
             counter += 1
 
-        pattern_constructed = ''
+        pattern_constructed = ""
         for word in s:
             try:
                 pattern_constructed += word_dict[word]
@@ -21,7 +21,8 @@ class Solution:
         if pattern_constructed == pattern:
             return True
 
+
 ss = Solution()
-pattern = 'abba'
+pattern = "abba"
 s = "dog cat cat dog"
 print(ss.wordPattern(pattern, s))

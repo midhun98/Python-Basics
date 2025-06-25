@@ -7,31 +7,31 @@ class Solution:
         string = list(string)
 
         res = ""
-        if len(string)%k == 0:
+        if len(string) % k == 0:
             counter = 0
             for i in string:
                 res += i
-                counter+=1
-                if counter%k==0:
+                counter += 1
+                if counter % k == 0:
                     res += "-"
             res = res[:-1]
             return res
 
-        if len(string)%k != 0:
+        if len(string) % k != 0:
             counter = 0
             for letter in string:
                 res += letter
-                counter+=1
-                if counter == len(string)%k:
+                counter += 1
+                if counter == len(string) % k:
                     res += "-"
                     break
 
             out = ""
             counter = 0
-            for i in string[len(string)%k:]:
+            for i in string[len(string) % k :]:
                 res += i
-                counter+=1
-                if counter%k==0:
+                counter += 1
+                if counter % k == 0:
                     res += "-"
             out = res + out
             return out[:-1]
@@ -39,5 +39,5 @@ class Solution:
 
 ss = Solution()
 s = "2-5g-3-J"
-k= 2
-print(ss.licenseKeyFormatting(s,k))
+k = 2
+print(ss.licenseKeyFormatting(s, k))

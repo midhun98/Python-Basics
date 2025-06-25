@@ -6,7 +6,8 @@ class Solution:
                 stack.append(letter)
             if letter.isnumeric():
                 stack.pop()
-        return ''.join(stack)
+        return "".join(stack)
+
 
 ss = Solution()
 s = "cb34"

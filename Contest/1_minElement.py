@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def minElement(self, nums: List[int]) -> int:
         out = []
@@ -13,5 +14,5 @@ class Solution:
 
 
 ss = Solution()
-nums = [999,19,199]
+nums = [999, 19, 199]
 print(ss.minElement(nums))

@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def findContentChildren(self, g: List[int], s: List[int]) -> int:
         g = sorted(g)
@@ -15,8 +16,9 @@ class Solution:
             else:
                 s_p += 1
         return count
-        
+
+
 ss = Solution()
-g = [1,2,3]
-s = [1,1]
+g = [1, 2, 3]
+s = [1, 1]
 print(ss.findContentChildren(g, s))

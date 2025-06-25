@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
         out = []
@@ -13,9 +14,10 @@ class Solution:
                     break
             if not found:
                 out.append(0)
-        
+
         return out
 
+
 ss = Solution()
-temperatures = [73,74,75,71,69,72,76,73]
+temperatures = [73, 74, 75, 71, 69, 72, 76, 73]
 print(ss.dailyTemperatures(temperatures))

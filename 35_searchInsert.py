@@ -10,10 +10,8 @@ class Solution:
             nums.sort()
             return nums.index(target)
 
-nums =[1,3,5,6]
+
+nums = [1, 3, 5, 6]
 target = 2
 ss = Solution()
 print(ss.searchInsert(nums, target))
-
-
-

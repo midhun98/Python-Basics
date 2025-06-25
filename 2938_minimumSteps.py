@@ -9,6 +9,7 @@ class Solution:
                 steps += one_count
         return steps
 
+
 ss = Solution()
 s = "0110"
 print(ss.minimumSteps(s))

@@ -1,5 +1,4 @@
 class A:
-
     def __init__(self):
         print("in A Init")
 
@@ -9,8 +8,8 @@ class A:
     def feature2(self):
         print("Feature 2 working")
 
-class B(A):
 
+class B(A):
     def __init__(self):
         # super().__init__()
         print("in B Init")
@@ -21,12 +20,11 @@ class B(A):
     def feature4(self):
         print("Feature 4 working")
 
-class C(B):
 
+class C(B):
     def __init__(self):
         super().__init__()
         print("in C init")
-
 
     def feat(self):
         super().feature2()

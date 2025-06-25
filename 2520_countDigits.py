@@ -3,9 +3,10 @@ class Solution:
         numbers = [int(i) for i in str(num)]
         count = 0
         for n in numbers:
-            if num%n == 0:
+            if num % n == 0:
                 count += 1
         return count
+
 
 ss = Solution()
 num = 1248

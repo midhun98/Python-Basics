@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def binarysearch(self, numbers: List[int], find: int) -> int:
         low = 0
@@ -17,6 +18,6 @@ class Solution:
 
 
 ss = Solution()
-numbers = [0,1,2,3,4,5,6,7,8,9]
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 find = 6
 print(ss.binarysearch(numbers, find))

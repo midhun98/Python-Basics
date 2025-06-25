@@ -16,5 +16,5 @@ class Solution:
 
 
 ss = Solution()
-nums = [10,20,30,5,10,50]
+nums = [10, 20, 30, 5, 10, 50]
 print(ss.maxAscendingSum(nums))

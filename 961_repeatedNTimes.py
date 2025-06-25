@@ -1,6 +1,7 @@
 from typing import List
 from collections import Counter
 
+
 class Solution:
     def repeatedNTimes(self, nums: List[int]) -> int:
         data = Counter(nums)
@@ -9,6 +10,7 @@ class Solution:
             if value >= 2:
                 return key
 
+
 ss = Solution()
-nums = [1,2,3,3]
+nums = [1, 2, 3, 3]
 print(ss.repeatedNTimes(nums))

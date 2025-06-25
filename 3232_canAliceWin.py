@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def canAliceWin(self, nums: List[int]) -> bool:
         singles = 0
@@ -12,6 +13,7 @@ class Solution:
             return False
         return True
 
+
 ss = Solution()
-nums = [1,2,3,4,10]
+nums = [1, 2, 3, 4, 10]
 print(ss.canAliceWin(nums))

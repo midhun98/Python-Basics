@@ -4,7 +4,7 @@ class Solution:
         sentence = sentence.split(" ")
         length = len(sentence) - 1
         for i in range(length):
-            li.append(sentence[i][-1] == sentence[i + 1][0]
+            li.append(sentence[i][-1] == sentence[i + 1][0])
         if len(sentence) > 1:
             li.append(sentence[0][0] == sentence[-1][-1])
         if len(sentence) == 1:

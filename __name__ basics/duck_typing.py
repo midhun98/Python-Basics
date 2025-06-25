@@ -1,8 +1,8 @@
 class Pycharm:
-
     def execute(self):
         print("Compiling")
         print("Running")
+
 
 class MyEditor:
     def execute(self):
@@ -11,10 +11,11 @@ class MyEditor:
         print("Compiling")
         print("Running")
 
-class Laptop:
 
-    def code(self,ide):
+class Laptop:
+    def code(self, ide):
         ide.execute()
+
 
 ide = MyEditor()
 

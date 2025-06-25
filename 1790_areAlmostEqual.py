@@ -4,19 +4,20 @@ class Solution:
             return True
         if len(s1) != len(s2):
             return False
-        
+
         diff = []
         for i in range(len(s1)):
             if s1[i] != s2[i]:
                 diff.append(i)
-        
+
         if len(diff) == 2:
             i, j = diff
-            print(i,j)
+            print(i, j)
             if s1[i] == s2[j] and s1[j] == s2[i]:
                 return True
-        
+
         return False
+
 
 ss = Solution()
 s1 = "bank"

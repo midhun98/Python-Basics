@@ -1,6 +1,6 @@
 class Solution:
     def getEncryptedString(self, s: str, k: int) -> str:
-        out = ''
+        out = ""
         counter = 0
         n = len(s)
         for _ in s:
@@ -8,6 +8,7 @@ class Solution:
             out += s[num]
             counter += 1
         return out
+
 
 ss = Solution()
 s = "dart"

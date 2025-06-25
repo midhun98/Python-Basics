@@ -13,4 +13,3 @@ class Solution:
                 out = 0
                 if len(num) == 1:
                     return int(num)
-    

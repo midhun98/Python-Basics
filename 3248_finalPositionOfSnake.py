@@ -6,6 +6,7 @@ from typing import List
 # If DOWN: +n
 # If UP: -n
 
+
 class Solution:
     def finalPositionOfSnake(self, n: int, commands: List[str]) -> int:
         out = 0
@@ -23,5 +24,5 @@ class Solution:
 
 ss = Solution()
 n = 2
-commands = ["DOWN","RIGHT","UP"]
+commands = ["DOWN", "RIGHT", "UP"]
 print(ss.finalPositionOfSnake(n, commands))

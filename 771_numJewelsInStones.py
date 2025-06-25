@@ -1,5 +1,6 @@
 from collections import Counter
 
+
 class Solution:
     def numJewelsInStones(self, jewels: str, stones: str) -> int:
         stones_count = dict(Counter(stones))
@@ -8,7 +9,8 @@ class Solution:
             if letter in stones_count:
                 counter += stones_count[letter]
         return counter
-    
+
+
 ss = Solution()
 jewels = "aA"
 stones = "aAAbbbb"

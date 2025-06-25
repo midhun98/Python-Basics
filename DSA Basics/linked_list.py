@@ -33,7 +33,7 @@ class SLinkedList:
     def insert_position(self, pos, data):
         np = Node(data)
         temp = self.head
-        for i in range(pos-1):
+        for i in range(pos - 1):
             temp = temp.next
         np.next = temp.next
         temp.next = np
@@ -63,5 +63,5 @@ n2.next = n3  # linking n2 to n3
 
 L.insert_begining(5)
 L.insert_end(40)
-L.insert_position(4,20)
+L.insert_position(4, 20)
 L.display()

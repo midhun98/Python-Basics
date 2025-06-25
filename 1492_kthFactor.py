@@ -10,6 +10,6 @@ class Solution:
 
 
 ss = Solution()
-n = 4   
+n = 4
 k = 4
 print(ss.kthFactor(n, k))

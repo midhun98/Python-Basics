@@ -1,5 +1,6 @@
 from collections import Counter
 
+
 class Solution:
     def areOccurrencesEqual(self, s: str) -> bool:
         count_dict = Counter(s)
@@ -9,7 +10,8 @@ class Solution:
 
         # count_dict = Counter(s)
         # return len(set(count_dict.values())) == 1
-        
+
+
 ss = Solution()
 s = "abacbc"
 print(ss.areOccurrencesEqual(s))

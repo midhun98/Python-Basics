@@ -4,8 +4,9 @@ def selection_sort(nums):
         for j in range(i, len(nums)):
             if nums[j] < nums[minpos]:
                 minpos = j
-        nums[i], nums[minpos] =  nums[minpos], nums[i] 
+        nums[i], nums[minpos] = nums[minpos], nums[i]
     return nums
 
-nums = [5,4,3,2,1]
+
+nums = [5, 4, 3, 2, 1]
 print(selection_sort(nums))

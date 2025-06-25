@@ -6,6 +6,7 @@ class Solution:
             out.append(abs(ascii_values[i] - ascii_values[i + 1]))
         return sum(out)
 
+
 ss = Solution()
 s = "hello"
 print(ss.scoreOfString(s))
