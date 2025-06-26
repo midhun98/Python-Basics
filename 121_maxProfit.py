@@ -2,19 +2,20 @@ from typing import List
 
 
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
-        max_profit = 0
-        minmum_price = prices[0]
+	def maxProfit(self, prices: List[int]) -> int:
+		max_profit = 0
+		buy_price = prices[0]
 
-        for price in prices:
-            if price < minmum_price:
-                minmum_price = price
-            profit = price - minmum_price
+		for today_price in prices:
+			if today_price < buy_price:
+				buy_price = today_price
 
-            if profit > max_profit:
-                max_profit = profit
+			profit = today_price - buy_price
 
-        return max_profit
+			if profit > max_profit:
+				max_profit = profit
+
+		return max_profit
 
 
 ss = Solution()
