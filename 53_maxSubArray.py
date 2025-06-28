@@ -14,5 +14,6 @@ class Solution:
 
 
 ss = Solution()
+# nums = [-3, 4, -1, 2, 1, -5, 4]
 nums = [-1, -1, -3, 4, -1, 2, 1, -5, 4]
 print(ss.maxSubArray(nums))
