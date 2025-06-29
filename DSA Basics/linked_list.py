@@ -64,3 +64,19 @@ L.insert_beginning(5)
 L.insert_end(40)
 L.insert_position(4, 20)
 L.display()
+
+# First will be the head
+'''
+using first we can access all the next ones
+'''
+first = Node(1)
+second = Node(2)
+third = Node(3)
+
+first.next = second
+second.next = third
+
+print('\n')
+print(first.data)
+print(first.next.data)
+print(first.next.next.data)
