@@ -20,21 +20,34 @@ class SLinkedList:
 
 	def insert_beginning(self, data):
 		nb = Node(data)  # nb - node beginning
-		nb.next = self.head
-		self.head = nb
+		nb.next = self.head  # set the next of the new to the head
+		self.head = nb  # make the new node as head
 
 	def insert_end(self, data):
 		ne = Node(data)  # ne - node end
-		temp = self.head
-		while temp.next:
-			temp = temp.next
-		temp.next = ne
+		temp = self.head  # assign the head to temp
+		while temp.next:  # loop until next is null
+			temp = temp.next  # assign the last node to temp
+		temp.next = ne  # assign the last next of temp to ne
 
 	def insert_position(self, pos, data):
 		np = Node(data)
 		temp = self.head
+
+		if pos == 1:
+			np.next = self.head
+			self.head = np
+			return
+
 		for i in range(pos - 1):
+			if temp is None:
+				raise IndexError("Position out of bounds")
 			temp = temp.next
+			print("Inserting after:", temp.data)
+
+		if temp is None:
+			raise IndexError("Position out of bounds")
+
 		np.next = temp.next
 		temp.next = np
 
@@ -49,20 +62,11 @@ class SLinkedList:
 
 
 L = SLinkedList()
-n1 = Node(10)
-L.head = n1
-
-n2 = Node(20)
-# L.head.next = n2
-n1.next = n2  # linking n1 to n2
-
-n3 = Node(30)
-# L.head.next.next = n3
-n2.next = n3  # linking n2 to n3
-
-L.insert_beginning(5)
-L.insert_end(40)
-L.insert_position(4, 20)
+L.insert_beginning(4)
+L.insert_end(8)
+L.insert_end(15)
+L.insert_end(16)
+L.insert_position(2, 10)
 L.display()
 
 # First will be the head
