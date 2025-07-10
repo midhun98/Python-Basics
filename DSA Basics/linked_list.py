@@ -24,11 +24,13 @@ class SLinkedList:
 		self.head = nb  # make the new node as head
 
 	def insert_end(self, data):
-		ne = Node(data)  # ne - node end
-		temp = self.head  # assign the head to temp
-		while temp.next:  # loop until next is null
-			temp = temp.next  # assign the last node to temp
-		temp.next = ne  # assign the last next of temp to ne
+		ne = Node(data)  # Create a new node with the given data
+		temp = self.head  # Start from the head of the list
+
+		while temp.next:  # Traverse until the last node (whose next is None)
+			temp = temp.next  # Move to the next node
+
+		temp.next = ne  # Link the last node to the new node
 
 	def insert_position(self, pos, data):
 		np = Node(data)
@@ -49,20 +51,21 @@ class SLinkedList:
 			raise IndexError("Position out of bounds")
 
 		np.next = temp.next
-		temp.next = np
+		temp = np
 
 	def display(self):
 		if self.head is None:
-			return "Linked list is empty"
+			return "Linked list is empty"  # List is empty if head is None
 		else:
-			temp = self.head
-			while temp:
+			temp = self.head  # Start from the head node
+			while temp:  # Traverse until temp becomes None (end of list)
 				print(temp.data, "-->", end=" ")
-				temp = temp.next
+				temp = temp.next  # Move to the next node
 
 
 L = SLinkedList()
 L.insert_beginning(4)
+L.insert_beginning(6)
 L.insert_end(8)
 L.insert_end(15)
 L.insert_end(16)
