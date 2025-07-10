@@ -18,6 +18,22 @@ class Solution:
 		return max_profit
 
 
+class Solution2:
+	def maxProfit(self, prices: List[int]) -> int:
+		max_profit = 0
+		buy_price = prices[0]
+
+		for price in prices:
+			profit = price - buy_price
+			if profit > max_profit:
+				max_profit = profit
+
+			if price < buy_price:
+				buy_price = price
+
+		return max_profit
+
+
 ss = Solution()
 prices = [7, 1, 5, 3, 6, 4]
 print(ss.maxProfit(prices))

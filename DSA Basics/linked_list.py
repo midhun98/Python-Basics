@@ -73,9 +73,9 @@ L.insert_position(2, 10)
 L.display()
 
 # First will be the head
-'''
+"""
 using first we can access all the next ones
-'''
+"""
 first = Node(1)
 second = Node(2)
 third = Node(3)
@@ -83,7 +83,7 @@ third = Node(3)
 first.next = second
 second.next = third
 
-print('\n')
+print("\n")
 print(first.data)
 print(first.next.data)
 print(first.next.next.data)

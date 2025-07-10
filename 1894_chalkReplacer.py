@@ -2,13 +2,13 @@ from typing import List
 
 
 class Solution:
-    def chalkReplacer(self, chalk: List[int], k: int) -> int:
-        total_chalk = sum(chalk)
-        remaining_chalk = k % total_chalk
-        for index, number in enumerate(chalk):
-            remaining_chalk -= number
-            if remaining_chalk < 0:
-                return index
+	def chalkReplacer(self, chalk: List[int], k: int) -> int:
+		total_chalk = sum(chalk)
+		remaining_chalk = k % total_chalk
+		for index, number in enumerate(chalk):
+			remaining_chalk -= number
+			if remaining_chalk < 0:
+				return index
 
 
 ss = Solution()

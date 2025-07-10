@@ -2,11 +2,11 @@ from typing import List
 
 
 class Solution:
-    def createTargetArray(self, nums: List[int], index: List[int]) -> List[int]:
-        out = []
-        for x, y in zip(nums, index):
-            out.insert(y, x)
-        return out
+	def createTargetArray(self, nums: List[int], index: List[int]) -> List[int]:
+		out = []
+		for x, y in zip(nums, index):
+			out.insert(y, x)
+		return out
 
 
 ss = Solution()

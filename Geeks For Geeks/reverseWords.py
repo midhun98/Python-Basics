@@ -13,10 +13,10 @@ Explanation: After reversing the whole string(not individual words), the input s
 
 
 class Solution:
-    def reverseWords(self, str):
-        str = str.split(".")
-        out = str[::-1]
-        return ".".join(out)
+	def reverseWords(self, str):
+		str = str.split(".")
+		out = str[::-1]
+		return ".".join(out)
 
 
 ss = Solution()

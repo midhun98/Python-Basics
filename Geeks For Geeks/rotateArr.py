@@ -1,5 +1,6 @@
 # User function Template for python3
 
+
 class Solution:
 	def rotateArr(self, arr, d):
 		n = len(arr)

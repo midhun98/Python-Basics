@@ -2,12 +2,12 @@ from typing import List
 
 
 class Solution:
-    def restoreString(self, s: str, indices: List[int]) -> str:
-        map = dict(zip(indices, list(s)))
-        li = []
-        for number in range(len(s)):
-            li.append(map[number])
-        return "".join(li)
+	def restoreString(self, s: str, indices: List[int]) -> str:
+		map = dict(zip(indices, list(s)))
+		li = []
+		for number in range(len(s)):
+			li.append(map[number])
+		return "".join(li)
 
 
 ss = Solution()

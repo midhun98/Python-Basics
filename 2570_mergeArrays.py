@@ -2,24 +2,22 @@ from typing import List
 
 
 class Solution:
-    def mergeArrays(
-        self, nums1: List[List[int]], nums2: List[List[int]]
-    ) -> List[List[int]]:
-        data = {}
+	def mergeArrays(self, nums1: List[List[int]], nums2: List[List[int]]) -> List[List[int]]:
+		data = {}
 
-        for id, val in nums1:
-            data[id] = val
+		for id, val in nums1:
+			data[id] = val
 
-        for id, val in nums2:
-            if id in data:
-                data[id] += val
-            else:
-                data[id] = val
+		for id, val in nums2:
+			if id in data:
+				data[id] += val
+			else:
+				data[id] = val
 
-        res = []
-        for num in sorted(data):
-            res.append([num, data[num]])
-        return res
+		res = []
+		for num in sorted(data):
+			res.append([num, data[num]])
+		return res
 
 
 ss = Solution()

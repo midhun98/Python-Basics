@@ -10,14 +10,14 @@ the sunrise.
 
 
 class Solution:
-    def countBuildings(self, height):
-        highest = height[0]
-        out = 1
-        for i in range(1, len(height)):
-            if height[i] > highest:
-                out += 1
-                highest = height[i]
-        return out
+	def countBuildings(self, height):
+		highest = height[0]
+		out = 1
+		for i in range(1, len(height)):
+			if height[i] > highest:
+				out += 1
+				highest = height[i]
+		return out
 
 
 ss = Solution()

@@ -2,12 +2,12 @@ from typing import List
 
 
 class Solution:
-    def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
-        out = []
-        for li in image:
-            li.reverse()
-            out.append([val ^ 1 for val in li])
-        return out
+	def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
+		out = []
+		for li in image:
+			li.reverse()
+			out.append([val ^ 1 for val in li])
+		return out
 
 
 ss = Solution()

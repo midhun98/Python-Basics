@@ -1,6 +1,6 @@
 class Solution:
-    def canWinNim(self, n: int) -> bool:
-        return n % 4 != 0
+	def canWinNim(self, n: int) -> bool:
+		return n % 4 != 0
 
 
 ss = Solution()

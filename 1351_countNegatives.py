@@ -2,11 +2,11 @@ from typing import List
 
 
 class Solution:
-    def countNegatives(self, grid: List[List[int]]) -> int:
-        out = 0
-        for li in grid:
-            out += sum(1 for i in li if i < 0)
-        return out
+	def countNegatives(self, grid: List[List[int]]) -> int:
+		out = 0
+		for li in grid:
+			out += sum(1 for i in li if i < 0)
+		return out
 
 
 ss = Solution()

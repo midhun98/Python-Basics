@@ -1,6 +1,6 @@
 class Solution:
-    def countSegments(self, s: str) -> int:
-        return len(s.split())
+	def countSegments(self, s: str) -> int:
+		return len(s.split())
 
 
 ss = Solution()

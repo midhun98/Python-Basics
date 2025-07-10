@@ -2,11 +2,11 @@ from typing import List
 
 
 class Solution:
-    def maximumProduct(self, nums: List[int]) -> int:
-        out = 1
-        for num in nums:
-            out *= num
-        return out
+	def maximumProduct(self, nums: List[int]) -> int:
+		out = 1
+		for num in nums:
+			out *= num
+		return out
 
 
 ss = Solution()

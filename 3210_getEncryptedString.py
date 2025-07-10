@@ -1,13 +1,13 @@
 class Solution:
-    def getEncryptedString(self, s: str, k: int) -> str:
-        out = ""
-        counter = 0
-        n = len(s)
-        for _ in s:
-            num = (counter + k) % n
-            out += s[num]
-            counter += 1
-        return out
+	def getEncryptedString(self, s: str, k: int) -> str:
+		out = ""
+		counter = 0
+		n = len(s)
+		for _ in s:
+			num = (counter + k) % n
+			out += s[num]
+			counter += 1
+		return out
 
 
 ss = Solution()

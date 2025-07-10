@@ -1,16 +1,16 @@
-from typing import List
 from collections import Counter
+from typing import List
 
 
 class Solution:
-    def frequencySort(self, nums: List[int]) -> List[int]:
-        count = Counter(nums)
+	def frequencySort(self, nums: List[int]) -> List[int]:
+		count = Counter(nums)
 
-        def custom_sort(n):
-            return (count[n], -n)
+		def custom_sort(n):
+			return (count[n], -n)
 
-        nums.sort(key=custom_sort)
-        return nums
+		nums.sort(key=custom_sort)
+		return nums
 
 
 ss = Solution()
