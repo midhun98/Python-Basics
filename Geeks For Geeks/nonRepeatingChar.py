@@ -2,7 +2,7 @@ from collections import Counter
 
 
 class Solution:
-	def nonRepeatingChar(self, s):
+	def firstUniqChar(self, s: str) -> int:
 		data = Counter(s)
 		for key, value in data.items():
 			if value == 1:
