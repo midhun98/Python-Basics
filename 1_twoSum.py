@@ -8,6 +8,7 @@ class Solution:
 			diff = target - num
 			if diff in data:
 				return [index, data[diff]]
+
 			data[num] = index
 
 
