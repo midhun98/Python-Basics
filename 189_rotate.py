@@ -6,9 +6,22 @@ class Solution:
 		"""
 		Do not return anything, modify nums in-place instead.
 		"""
-		for _ in range(k):
-			num = nums.pop()
-			nums.insert(0, num)
+		# for _ in range(k):
+		# 	num = nums.pop()
+		# 	nums.insert(0, num)
+
+		k = k % len(nums)
+		arr = self.reverse(0, len(nums) - 1, nums)
+		arr = self.reverse(0, k-1, arr)
+		arr = self.reverse(k, len(nums)-1, arr)
+		return arr
+
+	def reverse(self, left, right, arr):
+		while left < right:
+			arr[left], arr[right] = arr[right], arr[left]
+			left += 1
+			right -= 1
+		return arr
 
 
 ss = Solution()
