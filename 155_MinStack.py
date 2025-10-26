@@ -18,3 +18,9 @@ class MinStack:
 
 	def getMin(self) -> int:
 		return self.minStack[-1]
+
+
+ss = MinStack()
+
+ss.push(10)
+print(ss.stack)
