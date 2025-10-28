@@ -2,3 +2,6 @@
 __pycache__
 .idea
 .fleet
+.zed
+.venv
+.ruff_cache
