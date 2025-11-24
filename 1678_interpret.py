@@ -6,7 +6,7 @@ class Solution:
 			if command[i] == "G":
 				out += "G"
 				i += 1
-			elif command[i : i + 1] == "()":
+			elif command[i : i + 2] == "()":
 				out += "o"
 				i += 2
 			elif command[i : i + 4] == "(al)":
