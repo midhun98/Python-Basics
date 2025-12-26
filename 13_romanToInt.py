@@ -13,5 +13,5 @@ class Solution:
 
 
 ss = Solution()
-s = "LVIII"
+s = "III"
 print(ss.romanToInt(s))
