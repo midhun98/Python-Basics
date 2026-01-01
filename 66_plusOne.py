@@ -14,5 +14,5 @@ class Solution:
 
 
 ss = Solution()
-digits = [1, 2, 3]
+digits = [1, 2, 3, 4]
 print(ss.plusOne(digits))
