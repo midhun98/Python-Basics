@@ -12,5 +12,5 @@ class Solution:
 
 
 ss = Solution()
-nums = [1, 2, 3, 3]
+nums = [2,1,2,5,3,2]
 print(ss.repeatedNTimes(nums))
